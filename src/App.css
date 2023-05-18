@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.total-container{
+ height: 100vh;
+  width: 100%;
+  background-image: url('../public/assets/bgedzt.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+}
+.logo{
+  width: 10rem;
+}
+.left-carousel{
+  min-height: 100%;
+}
+.main-container{
+max-width: 1000px;
+display: grid;
+place-items: center;
+background-color: white;
+}
+
+.form-label{
+  font-size: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.form-label span{
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: red;
+  margin-left: 1rem;
+}
+.form-control::placeholder{
+  font-size: 0.9rem;
+}
+.select-item{
+  border: 1px solid #E8EBEE;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+  height: 3.5rem;
+}
+.error-message{
+  color:red;
+  margin-top: 0.2rem;
+  font-size: 0.6rem;
+  margin-left: 0.4rem;
+}
+@media (max-width:1132px) {
+  .select-item{
+    font-size: 0.8rem;
+    height: 2.5rem;
+  }
+}
+@media (min-width:768px) {
+  .main-container{
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1.4rem;
+  }
+}
